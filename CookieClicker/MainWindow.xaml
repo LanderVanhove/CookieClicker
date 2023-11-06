@@ -17,6 +17,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Image Source="eurobg.png" Stretch="UniformToFill" Opacity="0.2" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
 
         <StackPanel>
         <Label Content="Lander's Vault"/>
@@ -26,7 +27,6 @@
             </WrapPanel>
         </StackPanel>
         <Image Source="euro.png" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
-
 
 
     </Grid>
