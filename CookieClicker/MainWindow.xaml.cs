@@ -28,9 +28,23 @@ namespace CookieClicker
         int moneyCounter = 0;
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            moneyCounter++;
-            LblMoneyCounter.Content = moneyCounter.ToString("c");
+            MoneyClicked();
+            ImgEuro.Width *= 1.1;
+            
 
         }
+        private void MoneyClicked()
+        {
+            moneyCounter++;
+            LblMoneyCounter.Content = moneyCounter.ToString("c");
+        }
+
+        private void ImgEuro_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            ImgEuro.Width *= 0.9;
+
+        }
+
+
     }
 }
