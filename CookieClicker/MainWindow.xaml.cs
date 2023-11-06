@@ -26,12 +26,14 @@ namespace CookieClicker
         }
 
         int moneyCounter = 0;
+        
         bool mousePosition = false;
 
         private void MoneyClicked()
         {
             moneyCounter++;
             LblMoneyCounter.Content = moneyCounter.ToString("c");
+            this.Title = $"Je hebt tot nu toe {moneyCounter:c} verdiend";
         }
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
