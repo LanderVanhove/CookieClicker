@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+        <Label Content="Lander's Vault"/>
+            <WrapPanel>
+                <Label Content="Money Counter: " />
+                <Label Name="LblMoneyCounter" Content="€ 0,00"/>
+            </WrapPanel>
+        </StackPanel>
+        <Image Source="euro.png" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+
+
     </Grid>
 </Window>

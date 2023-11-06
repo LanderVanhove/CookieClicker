@@ -24,5 +24,13 @@ namespace CookieClicker
         {
             InitializeComponent();
         }
+
+        int moneyCounter = 0;
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            moneyCounter++;
+            LblMoneyCounter.Content = moneyCounter.ToString("c");
+
+        }
     }
 }
