@@ -26,8 +26,8 @@
                 <Label Name="LblMoneyCounter" Content="€ 0,00"/>
             </WrapPanel>
         </StackPanel>
-        <Image Name="ImgEuro" Width="120" Source="euro.png" Grid.Row="1" 
-               MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseLeftButtonUp="ImgEuro_MouseLeftButtonUp"/>
+        <Image Name="ImgEuro" Source="euro.png" Grid.Row="1" Width="120"
+               MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseLeftButtonUp="ImgEuro_MouseLeftButtonUp" MouseLeave="ImgEuro_MouseLeave" MouseEnter="ImgEuro_MouseEnter"/>
 
 
     </Grid>
